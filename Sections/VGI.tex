@@ -1,0 +1,35 @@
+Volunteered Geographic information is essentially crowd sourced data which is defined formally as the “widespread engagement of large numbers of private citizens [...] in the creation of geographic information” (Goodchild, 2007, p.212). As VGI is, by definition, volunteered, in some cases it gives us the opportunity to study more personal and subjective forms of information than traditional forms of data collection (such as telephone surveys) (Elwood et al., 2012).
+Within mobility studies, VGI has enabled us to study movement at increasingly fine spatial and temporal scales, allowing us to better understand travel in urban mobility patterns than
+
+ever before (Arribas-Bel \& Tranos, 2017; Zahabi et al., 2017). This is because research initiated through smartphones has the potential to reach a larger number of people (as more people have smartphones than GPS devices) (Wu et al., 2016). Notedly, smartphones offer a more cost effective solution than GPS devices, which have been traditionally used in mobility research (Gong et al., 2014; Shi et al., 2018).
+Improving our understanding of the context surrounding human mobility in a city can even be used in the estimation of travel demand in the longer term (Meng et al., 2019). This is because the modes of travel people use around a city are often tied to socio-demographic characteristics of underlying populations such as employment status and affluence (Zhang \& Cheng, 2019). Through shifts in these characteristics e.g. with gentrification, this can an effect on the travel patterns and activities carried out within some parts of a city (Bricka et al., 2015). VGI gives us the opportunity to witness these patterns within crowd sourced data.
+\\
+Finally, Li et al. (2016) distinguish between two types of VGI:
+\begin{itemize}
+\item Participatory – which is the conscious inclusion of data by private citizens (in the
+context of this study this may be in-app responses to trip purpose of the MTL Trajet)
+\item Opportunistic – which is unconscious inclusion of data (in the context of this study
+this may be a GPS trace).
+\end{itemize}
+The success of mobility research is often dependent on combination of both types being present within a study.
+
+\subsection{Issues with in VGI in mobility studies}
+As many forms of volunteered information require that the users share their data themselves, this creates problems of representativeness in VGI (Li et al., 2016). The general trend in most travel-based surveys is that minority a respondents make up the majority of data, as only some people are willing to share their information (Goodchild \& Li, 2012).
+There are also problem with geographical representativeness as, VGI tend to be biased towards cities and in richer nations (Hecht \& Stephens, 2014). As such, Miller \& Goodchild (2014) argue that we must be careful when making generalisations about larger populations (than sample size) from any form of VGI. In terms of travel surveys where trip-purpose has been collected, these often tend to emphasise behavioural patterns of people from certain socio-demographics such as people that want to make their trip intentions known (Kim et al., 2015).
+Moreover, there are credibility issues with VGI due to a lack of quality control in its creation (Flanagin \& Metzger, 2008; Goodchild, 2013). VGI collected from travel surveys are particular hindered by this, as we do not ultimately know who each one of the individual participants are and whether they have inputted data correctly (Shi et al., 2018). As such, researchers collecting VGI often have to trust that respondents do not purposefully create mis-information (Attard et al., 2016).
+
+\subsection{MTL Trajet}
+Despite the potential the potential of VGI, there are many cities globally that have no form of formal research initiated within them (Attard et al., 2016). One exception to this, is in Montreal, Canada where a number of mobility-based travel surveys have been conducted in the last few years. One of these is the MTL Trajet travel survey project.
+The MTL Trajet is a large scale mobile phone travel survey app that has been run yearly between Oct-Nov and has been conducted since 2016 (Ville de Montr\'eal, 2019). The app itself is built from the Itinerum platform which is a framework providing researchers a platform to develop their own travel surveys (Yazdizadeh et al., 2019)
+The original aim of the MTL Trajet was to better understand transport behaviours within Montreal (MTL Trajet, 2017), although it is repurposed in this report to investigate trip purpose classification. The MTL Trajet survey originally contained information from its users about their personal locations (i.e. work and residency), although these have been removed from the data before being published in Montreal’s Open Data Portal (Hamouni, 2018).
+There are two available sources of MTL Trajet dataset available on Montreal’s Open Data Portal, one that contains raw GPS points and one that contains geo-routed GPS traces from the respondents, the latter of which is used in this report (Ville de Montr\'eal, 2019). Specifically, the geo-routed traces were created after feeding the raw GPS points into the Open-source Routing Machine, which maps the users’ trajectory (see Figure 2.2; Patterson \& Fitzsimmons, 2017b). Because of this, there is a degree of unaccountable inaccuracy in the data used is in this report.
+
+FIGURE 2.2
+\\
+
+An Itinerum Platform survey app works by employing a geofencing technique, which updates the sampling frequency of the GPS recordings from the smartphone whilst the user is moving (Patterson et al., 2019). When the user stops for more than 120 seconds, the update rate of GPS recordings drops and the user is prompted to end the trip and answer questions relating to how and why they have made the trip (Figure 2.3; Patterson et al., 2019). The app begins recording movement again when the user leaves the geofence once again.
+
+FIGURE 2.3
+\\
+
+The MTL Trajet has seen limited use in the literature and has instead mainly been restricted to use within the City of Montreal’s transport department (MTL Trajet, 2017). One example in the literature is in Yazdizadeh et al. (2019) who use the 2016 edition of MTL Trajet survey data for transport purpose classification models (which is described in Table 2.1).
