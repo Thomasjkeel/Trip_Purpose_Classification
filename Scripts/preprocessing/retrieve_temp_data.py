@@ -16,9 +16,14 @@ except:
     print("defaulting to 2017")
     year = '2017'
 
-required_info = {'2016':,
+api_info = {'2016':{'year':'2016',
+                       'month': ['09','10','11','12'],
                 '2017':{'year':'2017',
-                       'month'}}
+                       'month': ['09','10']}}}
+
+output_filename = input("Enter output filename (.nc extension will be added)")
+selected_year = api_info[year]  
+print(selected_year)
 ## retreive data
 c = cdsapi.Client()
 
@@ -28,10 +33,8 @@ c.retrieve(
         'variable':[
             '2m_temperature','total_precipitation'
         ],
-        'year':'2017',
-        'month':[
-            '09','10'
-        ],
+        'year': selected_year['year'],
+        'month':selected_year['month'],
         'day':[
             '01','02','03',
             '04','05','06',
@@ -59,5 +62,5 @@ c.retrieve(
         "grid": "1.0/1.0",  # 1.0 longitude by 1.0 latitude
         'format':'netcdf'
     },
-    'mtl_temperature_2017.nc') # save_file
+    output_filename + '.nc') # save_file
 
