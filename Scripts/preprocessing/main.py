@@ -1,16 +1,22 @@
 import sys
 import geopandas as gpd
 
-
-def main(filename_16, filename_17):
-    print(filename_16)
+def preprocessing(filename):
     # try:
-        # gdf_2016 = gpd.read_file(filename)
+        # gdf = gpd.read_file(filename)
     # except:
         # return print("Please enter the path to the MTL Trajet Shapefile")
-    
+
+    return
+
+
+def main():
+    filename = sys.argv[1]
+    filename2 = sys.argv[2]
+    # preprocessing(filename)
+    # preprocessing(filename2)
+    print(filename)
+
 
 if __name__ == '__main__':
-    filename_16 = sys.argv[1]
-    filename_17 = sys.argv[2]
-    main(filename_16, filename_17)
+    main();
