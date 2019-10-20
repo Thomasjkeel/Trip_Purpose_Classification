@@ -19,8 +19,6 @@ MODE_TRANSLATIONS = {"Voiture / Moto":"car", "À pied":"walking", "Transport col
                     "Transport Collectif":"public_transport", "Automobile":"car","VÃ©lo":"cycling",
                      "Automobile et transport collectif":"public_transport, car","Autre mode":"other"}
 
-CAN_LAM = {'init': 'epsg:3347'} ## convert to Canada Lambert Projection (https://epsg.io/3347)
-
 
 def mode_to_new_name(mode_names):
         """

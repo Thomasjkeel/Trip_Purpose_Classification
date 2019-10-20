@@ -13,7 +13,7 @@ def preprocessing(filename):
         # gdf = gpd.read_file(filename)
     # except:
         # return print("Please enter the path to the MTL Trajet Shapefile")
-    
+    # gdf = spatial_utils.change_projection(gdf)
     # gdf = translate.make_translations(gdf)
     # gdf = create_metrics(gdf)
     # gdf = join_data(gdf)
