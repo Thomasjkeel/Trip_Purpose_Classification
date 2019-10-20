@@ -1,11 +1,12 @@
 import sys
 import geopandas as gpd
-import Scripts.utils.spatial_utils as spatial_utils
-import Scripts.preprocessing.cleaning as cleaning
-import Scripts.preprocessing.create_metrics as create_metrics
-import Scripts.preprocessing.join_data as join_data
-import Scripts.preprocessing.subset as subset
-import Scripts.preprocessing.translate as translate
+sys.path.append('../')  # link to scripts
+import utils.spatial_utils as spatial_utils
+import preprocessing.cleaning as cleaning
+import preprocessing.create_metrics as create_metrics
+import preprocessing.join_data as join_data
+import preprocessing.subset as subset
+import preprocessing.translate as translate
 
 
 def preprocessing(filename):

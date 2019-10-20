@@ -11,6 +11,8 @@ def remove_timezone(data):
 
 def convert_timestamps_to_datetime(data):
     print("converting start and end timestamps to datetime objects")
-    data['starttime'] = pd.to_datetime(data['starttime'])
-    data['endtime'] = pd.to_datetime(data['endtime'])
+    if not type(data['starttime'][0]) == datetime.datetime:
+        data['starttime'] = pd.to_datetime(data['starttime'])
+    if not type(data['endtime'][0]) == datetime.datetime:
+        data['endtime'] = pd.to_datetime(data['endtime'])
     return data
