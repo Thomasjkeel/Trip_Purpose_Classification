@@ -1,3 +1,4 @@
+import shapely
 # GLOBALS
 # Canada Lambert Projection (https://epsg.io/3347)
 CAN_LAM = {'init': 'epsg:3347'}
