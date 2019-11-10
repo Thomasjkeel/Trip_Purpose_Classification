@@ -16,6 +16,7 @@ def create_metrics():
 
 def calc_direction(data):
     if not data.crs == WGS_84:
+        print("reprojecting data into WGS_84 for direction calculation")
         data = data.to_crs({'init': 'epsg:4326'})    
 
     print("calculating mean direction (may take 5-10 minutes)")
