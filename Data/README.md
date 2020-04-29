@@ -8,11 +8,11 @@ Description and data sources for all data used in this project.
 
 ### Spatial data:
 *Note: all geographically-referenced data were re-projected into the Statistics Canada Lambert (or NAD83)*
-**Canada's Dissemination Areas (2016)** – smallest standard geographic area available on the 2016 Canadian census
-**Canada's census subdivision boundary areas (2011)** – 
+**Canada's Dissemination Areas (2016)** – smallest standard geographic area available on the 2016 Canadian census  
+**Canada's census subdivision boundary areas (2011)** –   
 
 ### supplementary data for analysis:
-**Montreal Land Use** – from the Service de l'urbanisme et de la mobilité
+**Montreal Land Use** – from the Service de l'urbanisme et de la mobilité  
 
 **Points of Interest** – 
 
@@ -23,10 +23,10 @@ Description and data sources for all data used in this project.
 **MTL Trajet** – https://translate.google.com/translate?depth=1&hl=en&prev=search&rurl=translate.google.com&sl=fr&sp=nmt4&u=http://donnees.ville.montreal.qc.ca/dataset/mtl-trajet&xid=17259,15700023,15700043,15700186,15700190,15700253,15700256,15700259 [Accessed 29th April 2020].
 
 ### Spatial data:
-**Montreal Land Use** – https://translate.google.com/translate?hl=en&sl=fr&u=http://donnees.ville.montreal.qc.ca/dataset/affectation-du-sol&prev=search [Accessed 29th April 2020].
-**Canada's Dissemination Areas (2016)** – https://open.canada.ca/data/en/dataset/5a6e8f76-cfd2-4a69-acee-9ed205dd9556 [Accessed 29th April 2020].
+**Montreal Land Use** – https://translate.google.com/translate?hl=en&sl=fr&u=http://donnees.ville.montreal.qc.ca/dataset/affectation-du-sol&prev=search [Accessed 29th April 2020].  
+**Canada's Dissemination Areas (2016)** – https://open.canada.ca/data/en/dataset/5a6e8f76-cfd2-4a69-acee-9ed205dd9556 [Accessed 29th April 2020].  
 **Canada's census subdivision boundary areas (2011)** – https://www12.statcan.gc.ca/census-recensement/2011/geo/bound-limit/bound-limit-2011-eng.cfm [Accessed 29th April 2020].
 
 ### Supplementary data for analysis
-**Points of Interest** – 
+**Points of Interest** –     
 **Temperature and Precipitation** – ERA-5 Climate Re-analysis available at: https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5 [Accessed 29th April 2020].
