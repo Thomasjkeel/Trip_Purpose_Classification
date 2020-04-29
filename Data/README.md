@@ -7,11 +7,11 @@ Description and data sources for all data used in this project.
 **MTL Trajet** – a travel survey conducted by researchers at the Transportation Research for Integrated Planning (TRIP) lab, Concordia University (Patterson & Fitzsimmons, 2017a) parts of which are accessible from the Montreal Open Data Portal (see Data Location).
 
 ### Spatial data:
-*Note: all geographically-referenced data were re-projected into the Statistics Canada Lambert (or NAD83)*  
+*Note: all geographically-referenced data were re-projected into the Statistics Canada Lambert (or NAD83)*   
 **Canada's Dissemination Areas (2016)** – smallest standard geographic area available on the 2016 Canadian census  
 **Canada's census subdivision boundary areas (2011)** –   
 
-### supplementary data for analysis:
+### Supplementary data for analysis:
 **Montreal Land Use** – from the Service de l'urbanisme et de la mobilité  
 
 **Points of Interest** – 
