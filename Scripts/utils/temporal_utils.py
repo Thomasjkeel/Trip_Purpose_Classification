@@ -5,7 +5,7 @@ def remove_timezone(data):
     if not type(data.starttime[0]) == datetime.datetime:
         data = convert_timestamps_to_datetime(data)
     data['starttime'] = data['starttime'].apply(lambda dt: dt.replace(tzinfo=None))
-    data['endtime'] = data['starttime'].apply(lambda dt: dt.replace(tzinfo=None))
+    data['endtime'] = data['endtime'].apply(lambda dt: dt.replace(tzinfo=None))
     return data
 
 
