@@ -7,9 +7,9 @@ WORK-IN-PROGRESS. See Data/, Notebooks/ or Scripts/ for more information
 - Make the start and end clusters the same?... so they do not shift
 
 ## Example figures
-![Figure 1:](other/example_passthrough.png)[]()
-![Figure 2:](other/shop_calendar.png)[]()
-![Figure 3:](other/all_spatial_profiles.png)[]()
-![Figure 4:](other/kmean_cluster_end.png)[]()
-![Figure 5:](other/temporal_clusters.png)[]()
+![Figure 1: Example of intersection between trip and underlying dissemination areas](other/images/example_passthrough.png)[]()
+![Figure 2: Temporal 'calendar' of shopping trips](other/images/shop_calendar.png)[]()
+![Figure 3: Spatial profiles of trips by purpose](other/images/all_spatial_profiles.png)[]()
+![Figure 4: K-means spatial clusters](other/images/kmean_cluster_end.png)[]()
+![Figure 5: Temporal clusters from LDA model](other/images/temporal_clusters.png)[]()
 
