@@ -7,9 +7,9 @@ WORK-IN-PROGRESS. See Data/, Notebooks/ or Scripts/ for more information
 - Make the start and end clusters the same?... so they do not shift
 
 ## Example figures
-![alt text](other/example_passthrough.png "Logo Title Text 1")
-![alt text](other/shop_calendar.png "Logo Title Text 1")
-![alt text](other/all_spatial_profiles.png "Logo Title Text 1")
-![alt text](other/kmean_cluster_end.png "Logo Title Text 1")
-![alt text](other/temporal_clusters.png "Logo Title Text 1")
+![Figure 1:](other/example_passthrough.png)[]()
+![Figure 2:](other/shop_calendar.png)[]()
+![Figure 3:](other/all_spatial_profiles.png)[]()
+![Figure 4:](other/kmean_cluster_end.png)[]()
+![Figure 5:](other/temporal_clusters.png)[]()
 
