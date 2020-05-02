@@ -1,0 +1,69 @@
+## Description of all data used ##
+
+##### MTL Trajet Final Data #####
+Description: Subset, cleaned and pre-processed data from the MTL Trajet travel survey's of 2016 and 2017. 
+The exact processes are detailed in Notebooks/all_preprocessing.ipynb. It has been merged with supplementary data detialed in Data/supplementary_data
+
+Columns: 
+id_trip – The Trip's unique id
+mode – The mode of transport for trip chosen by the user (see gdf_2016_mode_factors.txt and gdf_2017_purpose_factors.txt for types)
+purpose – The reason that the trip has been taken as decided by the respondent (see gdf_2016_purpose_factors.txt and gdf_2017_purpose_factors.txt for types)
+starttime – Timestamp for trip beginning
+endtime – Timestamp for trip ending
+precip – Average precipitation rate for trip in millimeters (mm)
+temperatur – Average temperature for trip in degrees centigrade (C.)
+distance_m – Distance of trip in meters (m)
+duration – Duration of trip in seconds (sec)
+direction – Direction of the trip in circular degrees (0–360 ø)
+magnitude – Magnitude of direction (the strength of the direction at the circular mean)
+carddir – Cardinal Direction of the trip's linestring signature
+start_wgs – Latitude/Longitude point of the start of the trip in WGS 84 projection (epsg:4326)
+end_wgs – Latitude/Longitude point of the end of the trip in WGS 84 projection (epsg:4326)
+start_can – Point of the start of the trip in Canada Lambert projection (epsg:3347)
+end_can – Point of the end of the trip in Canada Lambert projection (epsg:3347)
+startx, starty, endx, endy – X, Y coordinates of start and end points
+startclust – K-means cluster id where the trip starts
+endclust – K-means cluster id where the trip ends
+hour – Hour in which the trip begins (used for LDA word)
+lda_word – The 'Temporal Word' used in the temporal clustering using LDA. An example of a temporal word would be: "Monday_8, Work" == a trip to work on Monday morning 
+temporal_c – The 'Temporal Cluster' this trip is determined to be in (for exact calculation see Notebooks/all_preprocessing.ipynb and the 'topic_to_lda' function)
+land_use_s – Land Use category of the spatial point where the trip starts (see gdf_2016_land_use_factors.txt and gdf_2017_land_use_factors.txt for types)
+land_use_e – Land Use category of the spatial point where the trip ends (see gdf_2016_land_use_factors.txt and gdf_2017_land_use_factors.txt for types)
+start_down – Boolean of whether the trip starts in Downtown Montreal 1==True (see Appendix X #TODO for Downtown classification) 
+end_down – Boolean of whether the trip ends in Downtown Montreal 1==True (see Appendix X #TODO for Downtown classification)
+weekday – Boolean of whether the trip started on a weekday or not i.e. Week == 1, Weekend == 0
+startrush – Boolean as to whether the trip started in rush hour (6:00–10:00 & 15:00–19:00) 1==True
+endrush – Boolean as to whether the trip ended in rush hour (6:00–10:00 & 15:00–19:00) 1==True
+thrurush – Boolean as to whether any part of the trip passed through rush hour (6:00–10:00 & 15:00–19:00) 1==True
+geometry – The Linestring of the trip's spatial signature
+
+##### X #####
+Description: The model's independent variables
+Columns:
+id_trip – The Trip's unique id
+mode_f – The code for the trip's transport mode (see gdf_2016_mode_factors.txt and gdf_2017_mode_factors.txt for types)
+duration – Duration of trip in seconds (sec)
+distance_m – Distance of trip in meters (m)
+magnitude – Magnitude of direction (the strength of the direction at the circular mean)
+carddir_f – The code for the cardinal direction of the trip (see gdf_2016_carddir_factors.txt and gdf_2017_carddir_factors.txt for types)
+start_down – Boolean of whether the trip starts in Downtown Montreal 1==True (see Appendix X #TODO for Downtown classification) 
+end_down – Boolean of whether the trip ends in Downtown Montreal 1==True (see Appendix X #TODO for Downtown classification)
+weekday – Boolean of whether the trip started on a weekday or not i.e. Week == 1, Weekend == 0
+temporal_c – The 'Temporal Cluster' this trip is determined to be in (for exact calculation see Notebooks/all_preprocessing.ipynb and the 'topic_to_lda' function)
+precip – Average precipitation rate for trip in millimeters (mm)
+temperatur – Average temperature for trip in degrees centigrade (C.)
+startrush – Boolean as to whether the trip started in rush hour (6:00–10:00 & 15:00–19:00) 1==True
+endrush – Boolean as to whether the trip ended in rush hour (6:00–10:00 & 15:00–19:00) 1==True
+thrurush – Boolean as to whether any part of the trip passed through rush hour (6:00–10:00 & 15:00–19:00) 1==True
+startclust – K-means cluster id where the trip starts
+endclust – K-means cluster id where the trip ends
+land_use_s_f – The code for the land use category of the spatial point where the trip starts (see gdf_2016_land_use_factors.txt and gdf_2017_land_use_factors.txt for types)
+land_use_e_f – The code for land use category of the spatial point where the trip ends (see gdf_2016_land_use_factors.txt and gdf_2017_land_use_factors.txt for types)
+
+##### y #####
+Description: The model's dependent variable:
+Columns: 
+purpose_f – The code of the trip's purpose (see gdf_2016_purpose_factors.txt and gdf_2017_purpose_factors.txt for types)
+
+##### land_use_factors, carddir_factors, mode_factors, purpose_factors #####
+Description: All the numerical categories which are output by the factorisation encoding i.e. which categories are represented with which numbers
