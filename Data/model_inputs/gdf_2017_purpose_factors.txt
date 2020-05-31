@@ -1,1 +1,1 @@
-{'pick_up_drop_off': 0, 'work': 1, 'shops': 2, 'returning_home': 3, 'health': 4, 'leisure': 5, 'education': 6, 'food_drink': 7}
+{'leisure': 0, 'food_drink': 1, 'shops': 2, 'pick_up_drop_off': 3, 'education': 4, 'health': 5}
