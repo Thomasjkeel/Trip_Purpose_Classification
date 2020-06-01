@@ -1,1 +1,0 @@
-{'residential': 0, '0': 1, 'mixed': 2, 'employment': 3, 'diversified activities': 4, 'park': 5, 'institution': 6, 'religious': 7, 'conservation': 8, 'infrastructure': 9}
