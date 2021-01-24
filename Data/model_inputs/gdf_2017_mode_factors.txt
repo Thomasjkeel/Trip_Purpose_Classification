@@ -1,1 +1,1 @@
-{'walking': 0, 'public_transport': 1, 'car': 2, 'cycling': 3, 'public_transport, car': 4, 'other': 5}
+{'walking': 0, 'public_transport': 1, 'car': 2, 'cycling': 3, 'taxi': 4, 'car_sharing': 5, 'mixed': 6, 'other': 7, 'not_available': 8}
