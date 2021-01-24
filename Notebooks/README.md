@@ -1,9 +1,9 @@
 # Notebooks
 ## Summary
-Jupyter notebooks detailing all proceedures used in this study
+Jupyter notebooks detailing all procedures used in this study
 
 ## Layout
-- *models* – all models
+- *analysis* – all modelling, model evaluation and data exploration
 - *preprocessing* – data cleaning, retrieval, merging and translation
 
 
