@@ -1,1 +1,1 @@
-# Trip Purpose Classification project
+# Trip Purpose Classification
