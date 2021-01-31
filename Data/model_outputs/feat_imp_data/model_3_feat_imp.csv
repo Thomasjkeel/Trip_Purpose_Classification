@@ -1,0 +1,16 @@
+Feature,Importance
+LT_SHOP,0.053249
+LT_EDU,0.041668
+LT_LEISURE,0.026624
+midnight,0.025393
+weekday,0.019122
+midday,0.013428
+mode,0.007426
+LT_FOOD,0.007233
+LT_PICKUP,0.006849
+evening,0.005271
+LT_HEAL,0.004925
+distance_m,0.004771
+duration,0.004425
+afternoon,0.003963
+morning,0.000885
